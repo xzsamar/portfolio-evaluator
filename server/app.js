@@ -9,8 +9,8 @@ app.use(cors());
 app.use(express.json());
 
 // ✅ Routes
-const profileroutes = require("./routes/profileroutes");
-app.use("/api/profile", profileroutes);
+const profileRoutes = require("./routes/profileRoutes");
+app.use("/api/profile", profileRoutes);
 
 // ✅ Health check route
 app.get("/api/health", (req, res) => {
